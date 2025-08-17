@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anime & TV Series Tracker</title>
+  <link rel="stylesheet" href="anime.css">
+</head>
+<body>
+  <header>
+    <h1>Anime & TV Series Tracker</h1>
+    <button id="theme-toggle">🌙 Dark Mode</button>
+  </header>
+
+  <nav class="category-buttons">
+    <button data-category="All" class="active">All</button>
+    <button data-category="Watching">Watching</button>
+    <button data-category="Completed">Completed</button>
+    <button data-category="On Hold">On Hold</button>
+    <button data-category="Dropped">Dropped</button>
+    <button data-category="Plan to Watch">Plan to Watch</button>
+  </nav>
+
+  <div class="search-filter">
+    <input type="text" id="search" placeholder="Search Anime or Series...">
+    <select id="filter-genre">
+      <option value="">All Genres</option>
+      <option value="Action">Action</option>
+      <option value="Comedy">Comedy</option>
+      <option value="Drama">Drama</option>
+      <option value="Fantasy">Fantasy</option>
+    </select>
+  </div>
+
+  <main id="anime-list" class="anime-list"></main>
+
+  <script src="anime.js"></script>
+</body>
+</html>
